@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17243a">
+<title>Our Golden Memories — Five Friends, One Story</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--navy:#17243a;--navy2:#22334c;--cream:#f7f0e4;--paper:#fffaf1;--gold:#c49a59;--ink:#2c2a27;--muted:#77716a;--line:#e9decd;--rose:#b97872}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}button,input,textarea{font:inherit}button{cursor:pointer}.serif,h1,h2,h3,.quote{font-family:'Playfair Display',serif}.nav{position:sticky;top:0;z-index:20;background:rgba(23,36,58,.96);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:13px max(5vw,18px);color:#fff}.brand{font-family:'Playfair Display',serif;font-size:1.1rem;letter-spacing:.04em}.brand span{color:#e2c18e}.navlinks{display:flex;gap:19px;align-items:center}.navlinks a{color:#eee2d1;text-decoration:none;font-size:.86rem}.navlinks a:hover{color:#e6c58f}.menu{display:none;background:none;color:white;border:1px solid #ffffff55;border-radius:8px;padding:6px 10px}.hero{min-height:88vh;display:grid;place-items:center;text-align:center;color:#fff;padding:90px 22px;position:relative;overflow:hidden;background:linear-gradient(120deg,rgba(17,28,46,.92),rgba(24,37,58,.72)),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:after{content:"";position:absolute;inset:16px;border:1px solid #d6b77c66;pointer-events:none}.hero-inner{max-width:850px;position:relative;z-index:1;animation:rise 1s ease both}.eyebrow{text-transform:uppercase;letter-spacing:.25em;font-size:.75rem;color:#e4c48e}.hero h1{font-size:clamp(3rem,8vw,6.5rem);line-height:1.02;margin:18px 0;color:#fff7e9}.hero .sub{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.1rem,2.5vw,1.55rem);color:#ead8bd}.hero p{max-width:610px;margin:25px auto;color:#e8e0d5}.btn{border:0;border-radius:999px;padding:13px 23px;background:var(--gold);color:#17243a;font-weight:700;box-shadow:0 8px 24px #0002;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn-outline{background:transparent;border:1px solid #d7b77e;color:#f5e6ce;box-shadow:none}.hero .btn{margin:8px}.scrollhint{margin-top:32px;color:#d6c4a7;font-size:.8rem;letter-spacing:.12em}.section{padding:86px max(6vw,20px);max-width:1200px;margin:auto}.section-head{text-align:center;max-width:720px;margin:0 auto 42px}.kicker{color:#a47c42;text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:700}.section h2{font-size:clamp(2.1rem,5vw,3.4rem);color:var(--navy);line-height:1.15;margin:10px 0}.section-head p{color:var(--muted)}.intro{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:0 12px 35px #55452b0b}.intro p{margin:0;font-size:1.04rem}.friends{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.friend{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center;transition:.25s}.friend:hover{transform:translateY(-5px);box-shadow:0 14px 30px #44351d12}.avatar{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;margin:0 auto 13px;background:#eee0c9;color:#70542e;font-family:'Playfair Display',serif;font-size:1.6rem;border:3px solid #fff;box-shadow:0 0 0 1px #d8c5a8}.friend h3{margin:5px 0;color:var(--navy);font-size:1.35rem}.friend p{margin:0;color:var(--muted);font-size:.9rem}.memory{background:var(--navy);color:#f7efe2;max-width:none;padding:90px max(6vw,20px)}.memory .section-head h2{color:#f7ead4}.memory .section-head p{color:#d0c5b4}.story{max-width:900px;margin:auto;background:#ffffff0b;border:1px solid #d5b77b44;border-radius:22px;padding:clamp(24px,5vw,48px);position:relative}.story .date{color:#e0bd82;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem}.story h3{font-size:2rem;color:#f4d9aa;margin:8px 0 20px}.story p{color:#eee4d6}.story .bigquote{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,2rem);font-style:italic;color:#f1d8ad;line-height:1.45;margin:28px 0}.story .sign{color:#dfc08e;text-align:right;font-family:'Playfair Display',serif;font-style:italic}.timeline{max-width:780px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:2px;background:#d9c6a7}.moment{position:relative;padding:0 0 30px 52px}.moment:before{content:"";position:absolute;left:7px;top:7px;width:18px;height:18px;background:var(--gold);border:4px solid var(--cream);border-radius:50%;box-shadow:0 0 0 1px #b58c50}.moment h3{font-size:1.25rem;color:var(--navy);margin:0 0 5px}.moment p{margin:0;color:var(--muted)}.letters{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.letter{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:23px}.letter h3{color:#8c6635;margin:0 0 8px}.letter p{margin:0;color:#615b53}.dream{background:linear-gradient(135deg,#eadcc6,#f8f1e6);border-radius:24px;text-align:center;padding:clamp(30px,6vw,65px);border:1px solid #ddc9a9}.dream h2{font-size:clamp(2rem,5vw,3.5rem)}.dream .quote{font-size:clamp(1.2rem,2.8vw,1.7rem);font-style:italic;color:#6d5130;max-width:800px;margin:20px auto}.gallery-tools{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:20px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.photo{min-height:190px;border-radius:16px;background:linear-gradient(145deg,#e9ddca,#f8f2e8);border:1px dashed #c6ad87;display:grid;place-items:center;text-align:center;overflow:hidden;color:#88765c;padding:16px}.photo img{width:100%;height:100%;max-height:280px;object-fit:cover}.guest{max-width:760px;margin:auto;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-weight:700;color:var(--navy);font-size:.9rem}.field input,.field textarea{width:100%;border:1px solid #d9cbb7;border-radius:10px;background:#fffdf9;padding:12px;color:var(--ink);outline:none}.field input:focus,.field textarea:focus{border-color:#b88c4c;box-shadow:0 0 0 3px #c49a5922}.field textarea{min-height:100px;resize:vertical}.messages{display:grid;gap:10px;margin-top:22px}.message{background:#f3eadc;padding:15px;border-radius:12px;border-left:3px solid var(--gold)}.message strong{color:var(--navy)}.message small{display:block;color:#887d70;margin-top:5px}.footer{background:var(--navy);color:#e8ddcd;text-align:center;padding:42px 20px}.footer .brand{font-size:1.4rem}.footer p{font-size:.85rem;color:#c8bdad}.musicbar{position:fixed;right:18px;bottom:18px;z-index:15;background:#17243a;color:#fff;border:1px solid #c49a59;border-radius:999px;padding:10px 15px;box-shadow:0 8px 25px #0003;font-size:.85rem}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#17243a;color:#fff;padding:11px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;z-index:50}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.navlinks{display:none;position:absolute;top:56px;left:0;right:0;background:#17243a;padding:18px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.friends{grid-template-columns:repeat(2,1fr)}.letters{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.section{padding-top:65px;padding-bottom:65px}}@media(max-width:430px){.friends{grid-template-columns:1fr 1fr;gap:10px}.friend{padding:18px 10px}.gallery{grid-template-columns:1fr}.hero{min-height:82vh}.intro{padding:23px}.guest{padding:20px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="brand">OUR <span>GOLDEN</span> MEMORIES</div>
+  <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  <div class="navlinks" id="navlinks">
+    <a href="#friends">Our Friends</a><a href="#story">Saim & Haseeb</a><a href="#timeline">Memories</a><a href="#letters">Letters</a><a href="#gallery">Gallery</a><a href="#guestbook">Guestbook</a>
+  </div>
+</nav>
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">A little place for a lifetime of friendship</div>
+    <h1>Our Golden<br>Memories</h1>
+    <div class="sub">Five friends. One unforgettable story.</div>
+    <p>Kuch din calendar par sirf tareekh hote hain. Aur kuch din dil mein hamesha ke liye ghar bana lete hain.</p>
+    <a class="btn" href="#friends" style="display:inline-block;text-decoration:none">Explore Our Memories ↓</a>
+    <div class="scrollhint">MADE WITH LOVE · FOR OUR FRIENDSHIP</div>
+  </div>
+</header>
+
+<section class="section" id="welcome">
+  <div class="section-head"><div class="kicker">A note from the heart</div><h2>Yeh website kyun?</h2><p>Un doston ke naam, jin ke saath guzra hua waqt aaj bhi yaad aata hai.</p></div>
+  <div class="intro">
+    <p>Yeh jagah kisi perfect tasveer ya badi kahani ke liye nahi. Yeh un chhoti chhoti baaton ke liye hai jo shayad us waqt aam lagti thin: sardi ke din school ki chhat par saath baithna, ek doosre ko chherna, be-wajah hansna, gupchup study karna aur ek doosre ke liye kharay hona. Waqt badal gaya, raaste alag ho gaye, lekin woh lamhe hamari kahani ka hissa hain. <strong>Yeh yaadein hum sab ki hain.</strong></p>
+  </div>
+</section>
+
+<section class="section" id="friends">
+  <div class="section-head"><div class="kicker">The people behind the memories</div><h2>Our Five Stars</h2><p>Har dost apni jagah ek alag kahani hai. Haseeb bhi is kahani ka hissa hai.</p></div>
+  <div class="friends">
+    <article class="friend"><div class="avatar">H</div><h3>Haseeb</h3><p>Yaadon ko sambhal kar rakhne wala</p></article>
+    <article class="friend"><div class="avatar">S</div><h3>Saim</h3><p>11 saal ki dosti ka khaas hissa</p></article>
+    <article class="friend"><div class="avatar">A</div><h3>Abdullah</h3><p>Purani mehfil ka apna dost</p></article>
+    <article class="friend"><div class="avatar">S</div><h3>Sahil</h3><p>Yaadon ko mehsoos karne wala</p></article>
+    <article class="friend"><div class="avatar">A</div><h3>Ayan</h3><p>Hansi mazaak ke lamhon ka saathi</p></article>
+    <article class="friend"><div class="avatar">H</div><h3>Hussnain</h3><p>Is dosti ki kahani ka hissa</p></article>
+  </div>
+</section>
+
+<section class="memory" id="story">
+  <div class="section-head"><div class="kicker">A memory close to the heart</div><h2>Saim & Haseeb</h2><p>11 saal ki dosti — aur ek aisa waqya jo kabhi nahi bhoolta.</p></div>
+  <article class="story">
+    <div class="date">A friendship memory · Never forgotten</div>
+    <h3>A Friend Like Saim</h3>
+    <p>Ek din teacher ne homework ki assignment 8 martaba likhne ko di. Haseeb se assignment nahi ho saki, lekin Saim ne apna kaam poora kiya hua tha. Jab teacher assignment check karne aaye aur Haseeb ne Saim ko sach bataya, toh Saim ne apni 4 martaba wali assignment usay de di.</p>
+    <p>Phir jab teacher ne saza ki baat ki, Saim ne Haseeb ko akela nahi chhora. Usne teacher se kaha ke Haseeb ko na marein, uske hisse ki saza bhi mujhe de dein. Us lamhe ne Haseeb ke dil mein ek aisi yaad bana di jo aaj tak zinda hai.</p>
+    <div class="bigquote">"Us din mujhe samajh aaya ke dosti sirf saath hansne ka naam nahi. Dosti ka matlab hai mushkil waqt mein bhi ek doosre ka saath na chhorna."</div>
+    <p>Shayad Saim ko woh din yaad ho ya na ho, lekin Haseeb ke liye woh waqya hamesha khaas rahega. 11 saal ki dosti mein aise hi chhote lamhe bohat badi yaadein ban jaate hain.</p>
+    <div class="sign">— Haseeb, dil se</div>
+  </article>
+</section>
+
+<section class="section" id="timeline">
+  <div class="section-head"><div class="kicker">Little moments, big memories</div><h2>Our Golden Days</h2><p>Yeh timeline exact dates ki nahi, un ehsaason ki hai jo ab bhi yaad hain.</p></div>
+  <div class="timeline">
+    <div class="moment"><h3>Woh sardi wala din</h3><p>School ki chhat par sab saath baithe thay. Hansi mazaak, ek doosre ko chherna aur woh sukoon — sab kuch apna sa lagta tha.</p></div>
+    <div class="moment"><h3>Gupchup study sessions</h3><p>Saath baith kar parhna, beech beech mein baatein karna aur phir dobara kitaabon ki taraf laut aana.</p></div>
+    <div class="moment"><h3>Ek doosre ke liye kharay hona</h3><p>Woh chhoti shararatein aur ek doosre ka saath dene wali baatein, jo dosti ko aur gehra kar deti hain.</p></div>
+    <div class="moment"><h3>Aaj bhi yaad aate ho</h3><p>Raaste alag hue, magar Saim, Abdullah, Sahil, Ayan aur Hussnain ke saath guzra waqt dil mein mehfooz hai.</p></div>
+  </div>
+</section>
+
+<section class="section" id="letters">
+  <div class="section-head"><div class="kicker">Words we wish to say</div><h2>Letters for My Friends</h2><p>Har dost ke liye dil se ek chhota sa paighaam.</p></div>
+  <div class="letters">
+    <article class="letter"><h3>Dear Saim ❤️</h3><p>11 saal ki dosti mein tumhare saath bohat se lamhe guzre. Homework wala woh din main kabhi nahi bhool sakta. Tumne us waqt mera saath diya aur mujhe dosti ka matlab mehsoos karwaya. Shukriya ke tum meri kahani ka itna khaas hissa ho.</p></article>
+    <article class="letter"><h3>Dear Abdullah</h3><p>Yaar, purane din yaad aate hain. Woh saath baithna, baatein karna aur chhoti chhoti shararatein — kaash kabhi phir sab ek jagah hon.</p></article>
+    <article class="letter"><h3>Dear Sahil</h3><p>Jab humne purane waqt ko yaad kiya aur tum bhi emotional ho gaye, mujhe mehsoos hua ke woh yaadein sirf mere liye nahi thin. Hamari dosti ke woh lamhe hamesha khaas rahenge.</p></article>
+    <article class="letter"><h3>Dear Ayan</h3><p>Hamari dosti ke woh din, woh hansi mazaak aur saath guzara waqt yaad aata hai. Umeed hai ek din phir sab dost saath baith kar purani baatein karenge.</p></article>
+    <article class="letter"><h3>Dear Hussnain</h3><p>Tum bhi un yaadon ka hissa ho jo main dil se sambhal kar rakhta hoon. Zindagi jahan bhi le jaye, purane doston ki jagah khaas rehti hai.</p></article>
+    <article class="letter"><h3>To all of us</h3><p>Hum sab ki apni apni zindagi hai, lekin hamari kahani ka ek hissa hamesha wohi rahega: ek saath guzare hue din. Jab bhi milo, purani dosti ke saath milna.</p></article>
+  </div>
+</section>
+
+<section class="section" id="dream">
+  <div class="dream">
+    <div class="kicker">One wish, from the heart</div>
+    <h2>Kaash Woh Din Phir Laut Aayein</h2>
+    <p class="quote">"Kaash ek din phir hum sab school ki chhat par saath baithein. Na koi jaldi ho, na koi fikr. Bas wohi dost, wohi hansi mazaak, wohi gupshup — aur ek aur khoobsurat yaad."</p>
+    <p>Waqt ko wapas nahi laa sakte, lekin ek doosre se dobara milne ka din zaroor bana sakte hain.</p>
+    <a class="btn" href="#guestbook" style="display:inline-block;text-decoration:none;margin-top:10px">Apni baat likho ❤️</a>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="section-head"><div class="kicker">Pictures we will add someday</div><h2>Our Memory Gallery</h2><p>Abhi tasveerein nahi hain? Koi baat nahi. Jab milen, yahan add kar dena.</p></div>
+  <div class="gallery-tools">
+    <label class="btn" for="photoInput">＋ Add Photos</label><input class="hidden" id="photoInput" type="file" accept="image/*" multiple>
+    <button class="btn btn-outline" id="clearPhotos" style="color:#70542e;border-color:#bda47f">Clear Gallery</button>
+  </div>
+  <div class="gallery" id="galleryGrid">
+    <div class="photo">📷<br>Woh sardi wala din<br><small>Photo ka intezar hai</small></div>
+    <div class="photo">☀️<br>School ki chhat<br><small>Ek din phir sab saath</small></div>
+    <div class="photo">🤍<br>Hamari dosti<br><small>Yaadein dil mein mehfooz</small></div>
+  </div>
+</section>
+
+<section class="section" id="guestbook">
+  <div class="section-head"><div class="kicker">Leave a little piece of your heart</div><h2>Friendship Guestbook</h2><p>Apne doston ke liye koi paighaam, ya apni favourite memory likho.</p></div>
+  <div class="guest">
+    <form id="messageForm">
+      <div class="field"><label for="friendName">Tumhara naam</label><input id="friendName" maxlength="35" placeholder="Apna naam likho..." required></div>
+      <div class="field"><label for="friendMessage">Tum kya kehna chahte ho?</label><textarea id="friendMessage" maxlength="500" placeholder="Koi yaad, paighaam ya dil ki baat..." required></textarea></div>
+      <button class="btn" type="submit">Save My Message ❤️</button>
+    </form>
+    <div class="messages" id="messages"><p style="color:#887d70;text-align:center">Abhi pehla paighaam tumhara intezar kar raha hai.</p></div>
+    <p style="font-size:.78rem;color:#887d70;margin:18px 0 0">Note: Is demo mein messages aur photos isi browser/device par save hote hain. Sab doston ke devices par share karne ke liye baad mein online database connect karna hoga.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="brand">OUR <span>GOLDEN</span> MEMORIES</div>
+  <p>Made with love by Haseeb — for Saim, Abdullah, Sahil, Ayan & Hussnain.</p>
+  <p>Some days pass. Some memories stay. ❤️</p>
+  <a href="#home" style="color:#e5c38e;text-decoration:none;font-size:.85rem">Back to top ↑</a>
+</footer>
+
+<button class="musicbar" id="musicBtn" title="Play or pause gentle background music">♫ Play gentle music</button>
+<input type="file" id="musicInput" accept="audio/*" class="hidden">
+<div class="toast" id="toast"></div>
+<audio id="audio" loop></audio>
+<script>
+const $=id=>document.getElementById(id);
+$('menuBtn').addEventListener('click',()=>$('navlinks').classList.toggle('open'));
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>$('navlinks').classList.remove('open')));
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2400)}
+// Guestbook: local browser storage
+const KEY='goldenMemoriesMessagesV1';
+function loadMessages(){let items=[];try{items=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){};const box=$('messages');box.innerHTML='';if(!items.length){box.innerHTML='<p style="color:#887d70;text-align:center">Abhi pehla paighaam tumhara intezar kar raha hai.</p>';return}items.slice().reverse().forEach(item=>{const div=document.createElement('div');div.className='message';const strong=document.createElement('strong');strong.textContent=item.name;const p=document.createElement('p');p.textContent=item.message;p.style.margin='5px 0 0';const small=document.createElement('small');small.textContent=item.date;div.append(strong,p,small);box.append(div)})}
+$('messageForm').addEventListener('submit',e=>{e.preventDefault();const name=$('friendName').value.trim(),message=$('friendMessage').value.trim();if(!name||!message)return;let items=[];try{items=JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){}items.push({name,message,date:new Date().toLocaleString()});localStorage.setItem(KEY,JSON.stringify(items));$('messageForm').reset();loadMessages();toast('Tumhara paighaam save ho gaya ❤️')});
+loadMessages();
+// Gallery previews and local persistence (browser only)
+const PHOTO_KEY='goldenMemoriesPhotosV1';let photoUrls=[];
+function renderPhotos(){const grid=$('galleryGrid');grid.innerHTML='';photoUrls.forEach((src,i)=>{const wrap=document.createElement('div');wrap.className='photo';const img=document.createElement('img');img.src=src;img.alt='Friendship memory '+(i+1);wrap.append(img);grid.append(wrap)});if(!photoUrls.length)grid.innerHTML='<div class="photo">📷<br>Woh sardi wala din<br><small>Photo ka intezar hai</small></div><div class="photo">☀️<br>School ki chhat<br><small>Ek din phir sab saath</small></div><div class="photo">🤍<br>Hamari dosti<br><small>Yaadein dil mein mehfooz</small></div>'}
+try{photoUrls=JSON.parse(localStorage.getItem(PHOTO_KEY)||'[]')}catch(e){photoUrls=[]}renderPhotos();
+$('photoInput').addEventListener('change',e=>{const files=[...e.target.files];files.forEach(file=>{if(!file.type.startsWith('image/'))return;const reader=new FileReader();reader.onload=()=>{photoUrls.push(reader.result);try{localStorage.setItem(PHOTO_KEY,JSON.stringify(photoUrls));renderPhotos()}catch(err){toast('Storage bhar gaya. Kuch photos remove karke try karo.')}};reader.readAsDataURL(file)});e.target.value=''});
+$('clearPhotos').addEventListener('click',()=>{if(confirm('Gallery ki saved photos clear kar dein?')){photoUrls=[];localStorage.removeItem(PHOTO_KEY);renderPhotos();toast('Gallery clear ho gayi.')}});
+// User-selected audio only; no copyrighted track is bundled.
+$('musicBtn').addEventListener('click',async()=>{const audio=$('audio');if(audio.src){if(audio.paused){try{await audio.play();$('musicBtn').textContent='♫ Pause music'}catch(e){toast('Music play nahi ho saka.')}}else{audio.pause();$('musicBtn').textContent='♫ Play music'}}else{$('musicInput').click()}});
+$('musicInput').addEventListener('change',e=>{const file=e.target.files[0];if(!file)return;const url=URL.createObjectURL(file);$('audio').src=url;$('audio').play().then(()=>$('musicBtn').textContent='♫ Pause music').catch(()=>toast('Audio play nahi ho saka.'));});
+</script>
+</body>
+</html>
